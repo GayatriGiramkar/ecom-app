@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title color="primary">
+      <ion-icon (click)="main()" name="arrow-back"></ion-icon>
+       Signup
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  
+
+<ion-card>
+ 
+<ion-card-content>
+  <h6> *Create account :</h6>
+  <br>
+  <!-- <ion-item>
+    <ion-input [(ngModel)]="user.name" placeholder="name" name="name" ng-minlength="4" required></ion-input>
+  </ion-item>  
+  <br>
+  <ion-item>
+    <ion-input [(ngModel)]="user.mobile" placeholder="mobile number" type="mobilenumber" ng-minlength="10" required></ion-input>
+  </ion-item>
+  <br> -->
+  <ion-item>
+    <ion-input [(ngModel)]="email" placeholder="email" type="email" ng-minlength="6" required></ion-input>
+  </ion-item>
+  <br>
+  <ion-item>
+    <ion-input [(ngModel)]="password" placeholder="set password" type="password" ng-minlength="4" required></ion-input>
+   
+  </ion-item>
+ 
+  <br>
+  <ion-item>
+    <ion-input [(ngModel)]="cpassword" placeholder="confirm password" type="cpassword" ng-minlength="4" required></ion-input>
+   
+  </ion-item>
+  <br>
+  <br>
+  <ion-button expand="block" color="secondary" (click)="signup()">Signup</ion-button>
+  <br>
+ 
+  <a href = "https://accounts.google.com"> 
+    <ion-button expand="block">Signup with google?</ion-button>
+  </a>
+  </ion-card-content>
+</ion-card>
+</ion-content>

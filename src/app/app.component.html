@@ -1,0 +1,67 @@
+
+<ion-app>
+  <ion-menu menuId="main-menu" content-id="main">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title >
+          <ion-icon name="person-circle"></ion-icon>
+          Hello, Gayatri
+        </ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-menu-toggle>
+          <ion-item routerLink="home" >
+            <ion-icon  name="home" slot="start"></ion-icon>
+            <ion-label>Home</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <!-- <ion-menu-toggle>
+          <ion-item routerLink="menu" >
+            <ion-icon  name="menu" slot="start"></ion-icon>
+            <ion-label>Menu</ion-label>
+          </ion-item>
+        </ion-menu-toggle> -->
+        <ion-menu-toggle>
+          <ion-item routerLink="indoor" >
+            <ion-icon  name="leaf" slot="start"></ion-icon>
+            <ion-label>Indoor Plants</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+        <ion-item routerLink="outdoor" >
+          <ion-icon  name="leaf" slot="start"></ion-icon>
+          <ion-label>Outdoor Plants</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+        <ion-item>
+          <ion-icon  name="mail" slot="start"></ion-icon>
+          <ion-label>Inbox</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon  name="paper-plane" slot="start"></ion-icon>
+          <ion-label>Outbox</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon  name="heart" slot="start"></ion-icon>
+          <ion-label>Favrites</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon  name="archive" slot="start"></ion-icon>
+          <ion-label>Archived</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon  name="warning" slot="start"></ion-icon>
+          <ion-label>Spam</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon  name="trash" slot="start"></ion-icon>
+          <ion-label>Trash</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+   <ion-router-outlet id="main"></ion-router-outlet>
+ </ion-app>
+ 

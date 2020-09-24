@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title color="primary">
+      <ion-icon color="primary" (click)="home()" name="arrow-back"></ion-icon>
+      Cart
+      <ion-icon (click)="search()" class="icon3" name="search-sharp"></ion-icon>
+      <ion-icon (click)="main()" class="icon1" name="log-out"></ion-icon>
+    </ion-title>
+   <!-- <ion-buttons slot="start">
+      <ion-menu-button color="primary" menu="main-menu"></ion-menu-button>
+    </ion-buttons> -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card-content>
+    Your shopping cart is empty.
+    You have items saved to buy leter. To buy one or more now, click "Move to cart" next to the item.
+    <br>
+    <br>
+    <h1>Returns are easy</h1>
+    7-15 days returns on most items as per the return policy.
+  </ion-card-content>
+
+  <ion-card-content class="c">
+    <ion-button color="danger">APPLY COUPON</ion-button>
+    <ion-button color="success">CHECKOUT</ion-button>
+  </ion-card-content>
+
+<ion-tabs>
+  <!-- Tab bar -->
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button >
+      <ion-icon color="primary" name="calendar"></ion-icon>
+      <a href = "https://calendar.google.com/calendar">Schedule</a>
+    </ion-tab-button>
+
+    <ion-tab-button>
+      <ion-icon color="primary" name="map"></ion-icon>
+      <a href = "https://www.google.com/maps">Map</a>
+    </ion-tab-button>
+
+    <ion-tab-button >
+      <ion-icon color="primary" (click)="about()" name="information-circle"></ion-icon>
+      <ion-label color="primary">About</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button>
+      <ion-icon color="primary" (click)="photo()" name="information-circle"></ion-icon>
+      <ion-label color="primary">Photo Galary</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
+</ion-content>
